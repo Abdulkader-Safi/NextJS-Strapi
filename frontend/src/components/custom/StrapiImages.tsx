@@ -17,6 +17,7 @@ export function StrapiImage({
   className,
 }: Readonly<StrapiImageProps>) {
   if (!src) return null;
+
   const imageUrl = getStrapiMedia(src);
   const imageFallback = `https://placehold.co/${width}x${height}`;
 
